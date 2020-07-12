@@ -1,9 +1,9 @@
 function emailSpreadsheetAsPDF() {
 
-    var email = "hieu.nguyen.van@navigosgroup.com"; // Enter the required email address here
+    var email = "sample@email.com"; // Enter the required email address here
 
     var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getSheetByName("JS"); // Enter the name of the sheet here
+    var sheet = ss.getSheetByName("sheet1"); // Enter the name of the sheet here
   
   var range = sheet.getRange(3,1); 
   var data = range.getValues();
