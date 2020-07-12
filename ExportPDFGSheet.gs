@@ -10,7 +10,7 @@ function emailSpreadsheetAsPDF() {
   //var range_content = sheet.getRange(1,1,10,9);
  // var data_content = range_content.getTables();
   
-  var subject = "Autoreport: Job Seeker Product Progress Week " + data;
+  var subject = "Autoreport: Product Progress Week " + data;
 
     var body = "\n This is an autoreport " + " for week " + data;
 
