@@ -1,6 +1,6 @@
 function drawTable() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();  
-  var sheet  = ss.getSheetByName("JS");
+  var sheet  = ss.getSheetByName("sheet1");
   var ss_data = getData();
     var data = ss_data[0];
     var range = sheet.getRange(1,3); 
@@ -20,9 +20,9 @@ function drawTable() {
     }
     html + "</table>"
     MailApp.sendEmail({
-        to: "thao.ngo@navigosgroup.com, hieu.nguyen.van@navigosgroup.com, son.cai@navigosgroup.com, it-data@navigosgroup.com, ha.ngo@navigosgroup.com, anh.dang@vietnamworks.com,anh.vu@vietnamworks.com,chi.vu@vietnamworks.com,hien.le@vietnamworks.com,hien.vu@vietnamworks.com,Huyen.Nguyen@vietnamworks.com,mai.dang@vietnamworks.com,mo.vu@vietnamworks.com,my.hong.nguyen@vietnamworks.com,Ngoc.Anh.Nguyen@vietnamworks.com,trang.bui@vietnamworks.com,trang.nguyen@vietnamworks.com,trung.nguyen@vietnamworks.com,tuyen.dang@vietnamworks.com,van.dang@vietnamworks.com,yen.hai.tran@vietnamworks.com, anh.nguyen.mai@vietnamworks.com,ha.le.yen@vietnamworks.com, linh.phuong.nguyen@vietnamworks.com,Sayaka@vietnamworks.com, vy.huynh@vietnamworks.com, hang.nguyen@vietnamworks.com, hoang.duong@vietnamworks.com,huong.le@vietnamworks.com,kieu.pham@vietnamworks.com,ngoc.hua@vietnamworks.com,phuoc.truong@vietnamworks.com,phuong.thanh.nguyen@vietnamworks.com,phuong.ta@vietnamworks.com,thao.hoang@vietnamworks.com,thuy.nguyen@vietnamworks.com,trong@vietnamworks.com,truc.vu@vietnamworks.com,Uyen.Bui@vietnamworks.com,anh.nguyen@vietnamworks.com,van.lai@vietnamworks.com,vy.hoang@vietnamworks.com,Danh.Phan@vietnamworks.com,Khanh.Pham@vietnamworks.com,hang.le@navigosgroup.com, chuc.le@vietnamworks.com, thanh.mai@vietnamworks.com, khue.le@vietnamworks.com, khanh.mai@vietnamworks.com",
-        subject: "Product Progress report Week " +  week + "- 2020",
-      htmlBody: "This is an automatic report by Product team to update the workload and progress of VietnamWorks product development. For more information, please email hieu.nguyen.van@navigosgroup.com/ thao.ngo@navigosgroup.com . Have a good weekend! " +  html,
+        to: "sample@email.com",
+        subject: "Report Name " +  week + "- 2020",
+      htmlBody: "This is an automatic report by me! " +  html,
     })
 }
 function getData(){
