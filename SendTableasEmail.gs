@@ -3,8 +3,6 @@ function drawTable() {
   var sheet  = ss.getSheetByName("sheet1");
   var ss_data = getData();
     var data = ss_data[0];
-    var range = sheet.getRange(1,3); 
-  var week = range.getValues();
     var background = ss_data[1];
     var fontColor = ss_data[2];
     var fontStyles = ss_data[3];
@@ -21,8 +19,8 @@ function drawTable() {
     html + "</table>"
     MailApp.sendEmail({
         to: "sample@email.com",
-        subject: "Report Week " +  week + "- 2020",
-      htmlBody: "This is an automatic report by me! " +  html,
+        subject: "Yo, this is all automatic",
+      htmlBody: "Check this out! " +  html,
     })
 }
 function getData(){
